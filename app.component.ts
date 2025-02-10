@@ -1,10 +1,13 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { MyserviceService } from './myservice.service';
+import { NewCmpComponent } from './new-cmp/new-cmp.component';
+import { MyServiceComponent } from './my-service/my-service.component';
 
 @Component({
   selector: 'app-root',
   standalone: true, 
-  imports: [CommonModule], 
+  imports: [CommonModule, NewCmpComponent, MyServiceComponent], 
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
 })
